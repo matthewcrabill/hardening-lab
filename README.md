@@ -64,7 +64,7 @@ It's scheduled via cron to run daily:
 
 **SSH connection aborted on first connect**
 
-Trying to SSH into the VM failed immediately with `kex_exchange_identification: read: Connection aborted` — the TCP connection opened but was cut off before SSH could even exchange its banner. After confirming the VirtualBox port forwarding rule was correct, I checked the VM's running services (`systemctl list-units`) and found `ssh` wasn't listed at all — OpenSSH server had never actually been installed. Fixed with:
+Trying to SSH into the VM failed immediately with `kex_exchange_identification: read: Connection aborted`. The TCP connection opened but was cut off before SSH could even exchange its banner. After confirming the VirtualBox port forwarding rule was correct, I checked the VM's running services (`systemctl list-units`) and found `ssh` wasn't listed at all. OpenSSH server had never actually been installed. Fixed with:
 
 ```
 sudo apt install openssh-server -y
