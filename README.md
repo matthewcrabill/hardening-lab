@@ -24,17 +24,20 @@ A hands-on lab hardening a fresh Ubuntu Server install (SSH, firewall, intrusion
 
 ## Evidence
 
-**Before:**
-![Lynis score before hardening](screenshots/lynis-before.png)
-
-**After:**
-![Lynis score after hardening](screenshots/lynis-after.png)
+<table>
+<tr>
+<td align="center"><b>Before</b><br><img src="screenshots/lynis-before.png" width="420"></td>
+<td align="center"><b>After</b><br><img src="screenshots/lynis-after.png" width="420"></td>
+</tr>
+</table>
 
 **Firewall configuration and status:**
-![UFW setup and status](screenshots/ufw-setup-status.png)
+
+<img src="screenshots/ufw-setup-status.png" width="500">
 
 **Automated audit scheduled via cron:**
-![Cron job listing](screenshots/cron-listing.png)
+
+<img src="screenshots/cron-listing.png" width="500">
 
 ## The Audit Script
 
